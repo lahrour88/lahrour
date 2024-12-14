@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    span{
+        font-size: 24px;
+    }
+    .appbar {
+            background-color: #3a93d6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0%;
+            height: 30px;
+            box-shadow: 0px 5px 9px rgba(182, 174, 228, 0.986);
+            z-index: 1000;
+        }
+        .appbar button {
+            background-color: #34f704;
+            color: rgb(0, 53, 243);
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .appbar button:hover {
+            background-color: #83ff3bd7;
+        }
+   </style>
+</head>
+<body>
+    <div class="appbar">
+        <span>  حمل الدرس على جهازك الان مجانا </span>
+        <a href="static/fiche-de-lecture-rapide.pdf"download>
+            <button class="donload-button">download</button>
+        </a>
+    </div>
+    <img src="static/fiche.jpg"  width="100%"/>
+    
+</body>
+</html>

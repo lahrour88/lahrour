@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #c7c4c4cf;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #1c0505;
+    
+}
+
+header {
+    background-color: rgb(92, 93, 93);;
+    color: #fff;
+    padding: rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px; 
+    border-radius: 0 0 16px 16px; 
+    z-index: 1000; 
+}
+img{
+    position: fixed;
+    width: 55px;
+    top: -0px;
+    left: 5px;
+}
+input {
+    border-radius: 10px;
+    background-color: #c1d3d5f1;
+    padding: 5px;
+    color: rgb(18, 18, 18);
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #b2a1f1; 
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 2.4px;
+    height: 27px;
+    width: 90px;
+    border: none;
+    
+}
+
+button:hover {
+    background-color: #9e8ae0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    align-items: center;
+    margin: 1.6cap;
+    position: relative; 
+    top: 10px;
+    left:auto;
+}
+
+nav ul li a {
+    color: #38e5f5;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+.lessen {
+    color: rgb(11, 2, 2);
+    font-size: 17px;
+    line-height: 1.5;
+}
+section{
+    color: #0ca4a4;
+    font-size: 20px;
+    color: rgba(6, 6, 6, 0.846);
+    position: relative;
+}
+section span2{
+    color: #0537ff;
+    position: relative;
+    top: -100px;
+    left: -135px;
+    text-align: center;
+
+    }
+
+
+h3{
+    color: #32bb2b;
+    position: relative;
+    top: -19px;
+}
+span{
+    color: #ff6a00;
+    font-size: 20px;
+}
+p{
+    color: #040404;
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #c7c4c4cf;
+    color: #1f101a;
+    font-size: 18px;
+}
+.google{
+position: relative;
+width: 40px;
+top: -40px;
+left: -40px;
+}
+.facebook{
+    position: relative;
+    width: 90px;
+    top: 40px;
+    left: -110px;
+}
+.insta{
+    position: relative;
+    width: 34px;
+    top:-90px;
+    left: 4px;
+}
+.span2{
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <img src="static/MESON.png" alt="">
+                <li><a href="#about">cours</a></li>
+                <li><a href="#exercices">exercices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <br>
+        <h3>cours</h3>
+        <span>اليك جميع الدروس التي ستحتجها في دراتك</span>
+        <div class="lessen">
+            <hr>
+            <a href="{{ url_for('page2')}}">جميع دروس المرحلة الابتدئية</a>
+            <hr>
+            <span>المستوا الاعدادي</span>
+            <br>
+            <a href="{{ url_for('page6')}}">الثالت اعدادي</a>
+            <span> << </span>
+            <a href="{{ url_for('page3')}}">الثاني اعدادي</a>
+            <span> << </span>
+            <a href="{{ url_for('page4')}}">الاولئ اعدادي</a>
+            <hr>
+            <span>ثانوي تاهيلي</span>
+            <br>
+            <a href="{{ url_for('page5')}}">ثانية باك</a>
+            <span> << </span>
+            <a href="{{ url_for('page8')}}">اولى باك</a>
+            <span> << </span>
+            <a href="{{ url_for('page7')}}">جدع مشترك</a>
+        </div>
+    </section>
+    <section id="exercices">
+        <h3>exercices</h3>
+        <span>اليك جميع التمارين التي ستحتجها في دراتك</span>
+        <div class="lessen">
+            <hr>
+            <a href="#ex.html">جميع تمارين المرحلة الابتدئية</a>
+            <hr>
+            <span>المستوا الاعدادي</span>
+            <br>
+            <a href="#13">الثالت اعدادي</a><span> << </span><a href="#13">الثاني اعدادي</a><span> << </span><a href="#13">الاولئ اعدادي</a>
+            <hr>
+            <span>ثانوي تاهيلي</span>
+            <br><a href="#13">ثانية باك</a><span> << </span><a href="{{url_for('expc')}}">اولى باك</a><span> << </span><a href="#13">جدع مشترك</a>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h3>Contact</h3>
+        <a href="
+        https://www.instagram.com/lahrour_1902/profilecard/?igsh=MWk1ZjRzYnpsNnR3bA=="><img src="static/insta.png" class="insta"></a>
+        <a href="mailto::lahrour269@gmail.com"><img src="static/تنزيل.png" class="google"></a>
+        <a href="https://www.facebook.com/profile.php?id=100095541010734"><img src="static/FACE.png" class="facebook"></a>
+        <span2>lahrour_1902</span2><br>
+        
+    </section>
+    <footer>
+        <span1>© 2024 كل حقوق النشر محفوضة </span1>
+        <br>
+        <span1>مرحبا بك في اي وقت و متصفح</span1>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1primer</title>
+    <style>
+.appbar{ 
+    background-color: #3c3c41f1;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: -4px;
+    font-size: 30px;
+    border-radius: 19px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.content {
+    margin-top: 10px;
+}
+.subject-list {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    max-height: 99px;
+    overflow: hidden;
+}
+.subject-list.expanded {
+    max-height: none; /* إظهار كل العناصر */
+}
+.subject-list li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.more-button {
+    background: #e42be87e;
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    padding: 6px 30px;
+    cursor: pointer;
+    border-radius: 17px;
+    margin-top: 10px;
+    display: block;
+}
+span{
+    color: rgb(63, 241, 9);
+}
+    </style>
+</head>
+<body>
+    <div class="appbar">
+        <span1>جميع دروس المرحلة الابتدئية</span1>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- تكرار القائمة والزر الأول -->
+        <div class="content">
+            <br>
+            <br>
+            <h2>الاولى ابتدائي</h2><button class="more-button" id="more-button-1">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-1">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+                
+            </ul>
+        </div>
+
+        <!-- تكرار القائمة والزر الثاني -->
+        <div class="content">
+            <h2>الثاني ابتدائي</h2><button class="more-button" id="more-button-2">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-2">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+            </ul>
+        </div>
+
+        <!-- تكرار القائمة والزر الثالث -->
+        <div class="content">
+            <h2>الثالث ابتدائي</h2>
+            <button class="more-button" id="more-button-3">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-3">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>الرابع ابتدائي</h2>
+            <button class="more-button" id="more-button-4">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-4">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+            </ul>
+            
+        </div><div class="content">
+            <h2>السنة الخامسة ابتدائي</h2>
+            <button class="more-button" id="more-button-5">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-5">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+            </ul>
+           
+        </div>
+        
+        <div class="content">
+            <h2>السنة السادسة ابتدائي</h2>
+            <button class="more-button" id="more-button-6">المزيد</button>
+            <span>اضغط لعرض المزيد</span>
+            <ul class="subject-list" id="subject-list-6">
+                <a href=""><li>الرياضيات</li></a>
+                <a href="#"><li>العربية</li></a>
+                <a href="#"><li>الفرنسية</li></a>
+                <a href="#"><li>التاريخ والجغرافيا</li></a>
+                <a href="#"><li>التربية الإسلامية</li></a>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <span2>© 2024 كل حقوق الطبع والنشر محفوضة </span2>
+    </div>
+    <script>
+        // كود JavaScript لتكرار الأحداث لثلاثة أزرار وقوائم
+        document.getElementById('more-button-1').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-1');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+        document.getElementById('more-button-2').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-2');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+
+        document.getElementById('more-button-3').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-3');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+
+        document.getElementById('more-button-4').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-4');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+
+        document.getElementById('more-button-5').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-5');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+
+        document.getElementById('more-button-6').addEventListener('click', function() {
+            var subjectList = document.getElementById('subject-list-6');
+            subjectList.classList.toggle('expanded');
+            this.textContent = subjectList.classList.contains('expanded') ? 'إخفاء' : 'المزيد';
+        });
+
+    </script>
+</body>
+</html>

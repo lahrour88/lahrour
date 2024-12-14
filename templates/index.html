@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-shadow: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        header{
+            position: fixed;
+            background-color:rgb(78, 79, 79);;
+            top: 0;
+            width: 100%;
+            height: 12%;
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            margin: auto;
+            height: 90px;
+        }
+        span1{
+            color: rgb(255, 252, 252);
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+        
+        header nav .links{
+            color: rgb(0, 0, 0);
+            display: flex;
+
+        }
+        header nav .links li{
+            position: relative;
+            margin: 0 25px;
+            height:80px;
+            line-height: 60px;
+        }
+        header nav .links li::after{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            
+            width:0%;
+            height: 3px;
+            transition: 0.2s;
+        }
+        header nav .links li:hover::after{
+            width: 100%;
+        }
+        header nav .links li a{
+            color: rgb(255, 255, 255);
+            font-size: 124%;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            top:0%;
+        }
+        .text h1{
+            color: #7f8093;
+            
+        }
+        .text span{
+            font-size: 40px;
+        }
+        span{
+            color: rgb(30, 255, 255);
+            position: relative;
+            top: -15px;
+            font-size: 170%;
+        }
+        a{
+        color: #23f603;
+        font-size: 130%;
+        position: relative;
+        }
+        p{
+            color: #404040;
+            font-size: 20px;
+            margin: 10px 0 50px;
+            line-height: 1.8;
+        }
+        button{
+            color: rgb(255, 255, 255);
+            font-size: 110%;
+            padding: 4px  17px;
+            border: 0px solid;
+            border-radius: 10px;
+            background-color: #18bf1e;
+        }
+        span5{
+            color: #199cd4;
+            position: relative;
+            font-size: 97%;
+            top: -15px;
+        }
+        .hero{
+            height: 100vh;
+            background-image: url(static/photo-1731596691311-5955c052b66e.jpg);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>MON</span><span5>école</span5></a>
+            <ul class="links">
+                <li><a href="#">profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <div class="text">
+                <h1>lahrour.com</h1>
+                <span1>web MON école:</span1>
+                <p>مرحبا بك نحن هنا لمساعدتك في النجاح في دراستك ستجد جميع الدروس و التمارين مع الحل  ,لجميع المستويات و المساك , في انتضارك باقة من الدروس للتعلم </p>
+                    <a href="{{url_for('log')}}"><button type="button">to learn</button></a>
+            </div>
+            <div class="img">
+                <img src="static/2f5c8674-2c73-4126-887e-88d95e8e289a.png" width="90%"/>
+
+            </div>
+        </div>
+    </div>
+    <div class ="end">
+        
+    </div>
+</body>
+</html>
